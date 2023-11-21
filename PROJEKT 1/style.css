@@ -20,6 +20,9 @@ p {
 a{
     color: var(--odkaz);
 }
+a:hover{
+    color: var(--odkaz-hover);
+}
 
 .padding{
     padding-left:5vw;
@@ -181,6 +184,9 @@ a{
     margin-top: 0;
     text-align: left;
 }
+.where-to-go-p{
+width: 100%;
+}
 
 .paragraph-mezera{
     padding-top: 20px;
@@ -199,7 +205,7 @@ a{
     padding: 15px;
 }
 
-.revievs-main{
+.reviews-main{
     background-color: var(--pozadí4);
     display: flex;
     flex-direction: column;
@@ -207,7 +213,7 @@ a{
     padding-top: 50px;
 }
 
-.revievs-div-main{
+.reviews-div-main{
     background-color: var(--pozadí4);
     display: flex;
     flex-direction: column;
@@ -215,7 +221,7 @@ a{
     padding-bottom: 25px;
 }
 
-.revievs-div{
+.reviews-div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +250,7 @@ a{
     display: flex;
 }
 
-.last-img{
+.last-imgs{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -303,23 +309,24 @@ a{
     .about-us-main{
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         
     }
     .about-us-div{
-        height: 30vw;
-        max-width: 365px;
-        max-height: 313px;
+        max-width: 50%;
+        padding-right: 5vw;
     }
     .about-us-h{
         margin: 0;
     }
-    
+    .about-us-img-div{
+        width: 50%;
+        margin: 0;
+    }
     .about-us-img{
         width: 100%;
-        height: 30vw;
-        max-width: 365px;
-        max-height: 313px;
+        height: 100%;
+        object-fit: contain;
     }
     .four-simple-images{
         flex-direction: row;
@@ -343,28 +350,31 @@ a{
     }
     .where-to-go{
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
     .nadpis-where-to-go{
-        width: 13vw;
+        width: 20%;
         padding-right: 10px;
     }
     .where-to-go-div{
         display: flex;
         flex-direction: column;
-        width: 40vw;
+        width: 80%;
     }
-    .revievs-second{
-        width: 15em;
+    .reviews-second{
+        width: 40%;
     }
-    .revievs-div-main{
+    .reviews-heading{
+        margin-top:0;
+    }
+    .reviews-div-main{
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         
     }
-    .revievs-div{
+    .reviews-div{
         padding: 10px;
-        width: 25vw;
+        width: 50%;
     }
     .four-images-main{
         flex-wrap: wrap;
